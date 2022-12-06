@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script/script.js"></script>
+    <script>
+        //1
+        let car = new Car('Audi', 'R-8 Spyder', 2011, 150);
+        car.showCar();
+        getTimeToCoverDistance(car, 2059);
+        
+        //2
+        let f1 = new Fraction(3,5);
+        let f2 = new Fraction(4,9);
+        console.log(`-------SUM--------`);
+        sumFraction(f1,f2);
+        console.log(`-------DIFF-------`);
+        diffFraction(f1, f2);
+        console.log(`------MULTY-------`);
+        multyFraction(f1, f2)
+        console.log(`-----DEVISION-----`);
+        devisionFraction(f1, f2);
+
+        //3
+        let clock = new Clock(5,25,31);
+        console.log('-----Show time----');
+        showTime(clock);
+        console.log('-----+Seconds-----');
+        showTimeWithChangeSeconds(clock, 30)
+        console.log('-----+Minutes-----');
+        showTimeWithChangeMinutes(clock, 45);
+        console.log('------+Hours------')
+        showTimeWithChangeHours(clock, 18);
+    </script>
+</body>
+</html>
